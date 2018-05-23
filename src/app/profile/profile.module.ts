@@ -8,6 +8,8 @@ import { ProfileResolver } from './profile-resolver.service';
 import { SharedModule } from '../shared';
 import { ProfileRoutingModule } from './profile-routing.module';
 
+import { GalleryComponent } from '../gallery/gallery.component';
+
 @NgModule({
   imports: [
     SharedModule,
@@ -16,7 +18,8 @@ import { ProfileRoutingModule } from './profile-routing.module';
   declarations: [
     ProfileArticlesComponent,
     ProfileComponent,
-    ProfileFavoritesComponent
+    ProfileFavoritesComponent,
+    GalleryComponent
   ],
   providers: [
     ProfileResolver

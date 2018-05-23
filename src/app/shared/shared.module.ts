@@ -9,6 +9,9 @@ import { FavoriteButtonComponent, FollowButtonComponent } from './buttons';
 import { ListErrorsComponent } from './list-errors.component';
 import { ShowAuthedDirective } from './show-authed.directive';
 
+import { ProgressbarComponent } from './progress-bar/progress-bar.component';
+import { CountdownComponent } from './progress-bar/countdown.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -24,7 +27,9 @@ import { ShowAuthedDirective } from './show-authed.directive';
     FavoriteButtonComponent,
     FollowButtonComponent,
     ListErrorsComponent,
-    ShowAuthedDirective
+    ShowAuthedDirective,
+    ProgressbarComponent,
+    CountdownComponent
   ],
   exports: [
     ArticleListComponent,
@@ -38,7 +43,9 @@ import { ShowAuthedDirective } from './show-authed.directive';
     HttpClientModule,
     ListErrorsComponent,
     RouterModule,
-    ShowAuthedDirective
+    ShowAuthedDirective,
+    ProgressbarComponent,
+    CountdownComponent
   ]
 })
 export class SharedModule {}

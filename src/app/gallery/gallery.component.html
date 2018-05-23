@@ -1,0 +1,18 @@
+<p class="gallery-color"> 
+  gallery works!
+</p>
+
+<div class="compoment">
+  <app-progress-bar [process]="counterProgress"></app-progress-bar>
+  <app-countdown #countdown
+  [init]="totalCountdown"
+  (onDecrease)="updateProgress($event)"
+  (onComplete)="countdownFinish()"></app-countdown> 
+  
+  <div class="initInput">
+    <label for="totalCountdown">Init on:</label>
+    <input id="totalCountdown" text="text" [(ngModel)]="totalCountdown">
+  </div>  
+  
+  <button (click)="countdown.startCountdown(); counterProgress=0; ">Start</button>
+</div>
